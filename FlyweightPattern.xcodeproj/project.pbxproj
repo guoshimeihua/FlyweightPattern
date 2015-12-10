@@ -14,6 +14,9 @@
 		329C94631BA3FFE6009EA8EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329C94621BA3FFE6009EA8EE /* Images.xcassets */; };
 		329C94661BA3FFE6009EA8EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329C94641BA3FFE6009EA8EE /* LaunchScreen.xib */; };
 		329C94721BA3FFE6009EA8EE /* FlyweightPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 329C94711BA3FFE6009EA8EE /* FlyweightPatternTests.m */; };
+		C373C1B31C19663900FB34C9 /* WebSiteFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C373C1B21C19663900FB34C9 /* WebSiteFactory.m */; };
+		C373C1B71C1966FC00FB34C9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C373C1B61C1966FC00FB34C9 /* User.m */; };
+		C373C1BA1C19671E00FB34C9 /* ConcreteWebSite.m in Sources */ = {isa = PBXBuildFile; fileRef = C373C1B91C19671E00FB34C9 /* ConcreteWebSite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,13 @@
 		329C946B1BA3FFE6009EA8EE /* FlyweightPatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyweightPatternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		329C94701BA3FFE6009EA8EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		329C94711BA3FFE6009EA8EE /* FlyweightPatternTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightPatternTests.m; sourceTree = "<group>"; };
+		C373C1B11C19663900FB34C9 /* WebSiteFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebSiteFactory.h; path = ../WebSiteFactory.h; sourceTree = "<group>"; };
+		C373C1B21C19663900FB34C9 /* WebSiteFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebSiteFactory.m; path = ../WebSiteFactory.m; sourceTree = "<group>"; };
+		C373C1B41C19665600FB34C9 /* WebSiteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSiteProtocol.h; sourceTree = "<group>"; };
+		C373C1B51C1966FC00FB34C9 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C373C1B61C1966FC00FB34C9 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		C373C1B81C19671E00FB34C9 /* ConcreteWebSite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteWebSite.h; sourceTree = "<group>"; };
+		C373C1B91C19671E00FB34C9 /* ConcreteWebSite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteWebSite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,13 @@
 		329C94541BA3FFE6009EA8EE /* FlyweightPattern */ = {
 			isa = PBXGroup;
 			children = (
+				C373C1B11C19663900FB34C9 /* WebSiteFactory.h */,
+				C373C1B21C19663900FB34C9 /* WebSiteFactory.m */,
+				C373C1B41C19665600FB34C9 /* WebSiteProtocol.h */,
+				C373C1B81C19671E00FB34C9 /* ConcreteWebSite.h */,
+				C373C1B91C19671E00FB34C9 /* ConcreteWebSite.m */,
+				C373C1B51C1966FC00FB34C9 /* User.h */,
+				C373C1B61C1966FC00FB34C9 /* User.m */,
 				329C94591BA3FFE6009EA8EE /* AppDelegate.h */,
 				329C945A1BA3FFE6009EA8EE /* AppDelegate.m */,
 				329C945C1BA3FFE6009EA8EE /* ViewController.h */,
@@ -219,8 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C373C1B71C1966FC00FB34C9 /* User.m in Sources */,
 				329C945E1BA3FFE6009EA8EE /* ViewController.m in Sources */,
+				C373C1BA1C19671E00FB34C9 /* ConcreteWebSite.m in Sources */,
 				329C945B1BA3FFE6009EA8EE /* AppDelegate.m in Sources */,
+				C373C1B31C19663900FB34C9 /* WebSiteFactory.m in Sources */,
 				329C94581BA3FFE6009EA8EE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlyweightPattern/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlyweightPattern/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +438,7 @@
 				329C94771BA3FFE6009EA8EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		329C94781BA3FFE6009EA8EE /* Build configuration list for PBXNativeTarget "FlyweightPatternTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +447,7 @@
 				329C947A1BA3FFE6009EA8EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
